@@ -1,0 +1,17 @@
+.content-container {
+  display: flex;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 10px;
+}
+
+.right-panel {
+  flex: 2;
+  padding: 10px;
+}
+
+mat-card {
+  margin-bottom: 15px;
+}

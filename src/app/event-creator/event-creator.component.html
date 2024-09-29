@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>Create Event</mat-card-title>
+  <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Event Name</mat-label>
+      <input matInput formControlName="eventName">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Timestep</mat-label>
+      <input matInput type="number" formControlName="timestep">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Details</mat-label>
+      <textarea matInput formControlName="details"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Add Event</button>
+  </form>
+</mat-card>

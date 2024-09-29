@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-title>Scenario Manager</mat-card-title>
+  <mat-form-field appearance="outline">
+    <mat-label>Scenario ID</mat-label>
+    <input matInput [(ngModel)]="scenarioId">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="saveScenario()">Save Scenario</button>
+  <button mat-raised-button color="accent" (click)="loadScenario()">Load Scenario</button>
+</mat-card>
